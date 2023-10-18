@@ -3,202 +3,219 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   </head>
+
   <body>
-    <header class="main-header">
-      <!-- Шапка сайта -->
-      <nav>
-        <li>
-          <ui>
-            <img
-              src="./images/main_logo.svg"
-              width="140"
-              height="70"
-              alt="sedona_city_logo"
-             >
-          </ui>
-          <ui>
-            Главная
-          </ui>
-          <ui>
-            О седоне
-          </ui>
-          <ui>
-            Гостиницы
-          </ui>
-        </li>
-      </nav>
-
-      <div>
-        <div class="search">
-
-        </div>
-
-        <div class="wishlist">
-
-        </div>
-
-        <button>
-          Хочу сюда!
-        </button>
-      </div>
-    </header>
-
-    <main>
-     <div class="welcome_pic">
-       <img
-          src="./images/welcome_text.svg"
-          alt="main_text"
-        >
-     </div>
-
-     <div class="welcoeme_title">
-       <div>
+    <header class="page-header">
+      <nav class="navigation">
         <img
-          src="./images/index-background.jpg"
-          width="1200"
-          height="485"
-          alt="main_photo"
-         >
-       </div>
+          src="./images/main_logo.svg"
+          width="140"
+          height="70"
+          alt="sedona_city_logo"
+       >
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html">
+              Главная
+            </a>
+            <div class="navigation-pointer"></div>
+          </li>
 
-        <h1>
-          Седона — небольшой городок в Аризоне,
-          заслуживающий большего!
-        </h1>
-        <p>
-          Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
-        </p>
-     </div>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              О седоне
+            </a>
+          </li>
 
-     <div class="specification_list">
-      <div>
-        <h1>
-          Настоящий городок
-        </h1>
-        <p>
-          Седона — не аттракцион для туристов, там течёт своя жизнь
-        </p>
-
-        <img
-          src="./images/photo-1.jpg"
-          width="800"
-          height="384"
-          alt="photo_1"
-         >
-      </div>
-
-      <div>
-        <h1>
-          Небольшая площадь
-        </h1>
-        <p>
-          Все достопримечательности находятся очень близко
-        </p>
-      </div>
-
-      <div>
-        <h1>
-          Красивая дорога
-        </h1>
-        <p>
-          Ехать в Седону из Лас-Вегаса совсем не скучно!
-        </p>
-      </div>
-
-      <div>
-        <h1>
-          Мало туристов
-        </h1>
-        <p>
-          Большинство едет в Гранд Каньон и толпится там
-        </p>
-      </div>
-
-      <div>
-        <img
-          src="./images/photo-2.jpg"
-          width="800"
-          height="384"
-          alt="photo_1"
-         >
-
-         <div>
-          <h1>
-            Там есть
-            мост дьявола
-          </h1>
-          <p>
-            Да, по нему можно пройти! Если вы осмелитесь, разумеется
-          </p>
-         </div>
-      </div>
-
-     </div>
-
-     <div class="welcome_end">
-       <div>
-        <h1>
-          Приезжайте в Седону отдохнуть в комфорте и уюте!
-        </h1>
-        <p>
-          Опытный персонал и качественное обслуживание!
-        </p>
-       </div>
-
-        <div class="sedona_benefits">
-          <div>
-            <img
-              src="./images/advantage-home-icon.svg"
-              width="75"
-              height="72"
-              alt="home"
+          <li class="navigation-item">
+            <a
+              class="navigation-link navigation-link-current"
+              href="catalog.html"
             >
-           <h1>
-             Жильё
-           </h1>
-           <p>
-             Рекомендуем пожитьв настоящем мотеле, всё как в кино!
-           </p>
+              Гостиницы
+            </a>
+          </li>
+        </ul>
+
+        <div class="navigation-bar wrapper">
+          <div class="search">
+            <img src="./images/search.svg" >
           </div>
 
-          <div>
-           <img
-              src="./images/advantage-food-icon.svg"
-              width="75"
-              height="72"
-              alt="food"
-           >
-          <h1>
-             Еда
-          </h1>
-          <p>
-           Всегда заказывайте
-           топовый фирменный бургер, вы не разочаруетесь!
-          </p>
-         </div>
+          <div class="wishlist">
+            <img src="./images/heart.svg" >
+            <div class="wishlist_counter">12</div>
+          </div>
 
-         <div>
-            <img
-              src="./images/advantage-gift-icon.svg"
-              width="75"
-              height="72"
-              alt="gift"
-            >
-          <h1>
-           Сувениры
-          </h1>
-          <p>
-           Не только китайского,
-           но и настоящего местного производства!
-          </p>
-         </div>
+          <button class="want-button text">
+            Хочу сюда!
+          </button>
         </div>
-     </div>
-    </main>
+      </nav>
+    </header>
 
-    <footer class="main-footer">
-      <div class="subscribe">
+    <main class="page_content">
+      <div class="welcome-page praimary_logo"></div>
+
+      <div class="welcome-page praimary_title">
+          <h1 class="welcome-page main_title">
+            Седона — небольшой городок в Аризоне,
+            заслуживающий большего!
+          </h1>
+          <p class="welcome-page main_subtitle">
+            Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+          </p>
+      </div>
+
+      <div class="welcome-page specification_list">
+        <div class="wrapper">
+          <div class="blue-box">
+            <h1>
+              Настоящий городок
+            </h1>
+
+            <div class="welcome-page title_separator"></div>
+
+            <p class="welcome-page second_subtitle">
+              Седона — не аттракцион для туристов, там течёт своя жизнь
+            </p>
+          </div>
+
+          <img
+            src="./images/photo-1.jpg"
+            width="800"
+            alt="photo_1"
+          >
+        </div>
+
+        <div class="wrapper">
+          <div class="white-box">
+            <h1>
+              Небольшая площадь
+            </h1>
+
+            <div class="welcome-page title_separator separator_black"></div>
+
+            <p>
+              Все достопримечательности находятся очень близко
+            </p>
+          </div>
+
+          <div class="white-box item_secondery">
+            <h1>
+              Красивая дорога
+            </h1>
+
+            <div class="welcome-page title_separator separator_black"></div>
+
+            <p>
+              Ехать в Седону из Лас-Вегаса совсем не скучно!
+            </p>
+          </div>
+
+          <div class="white-box">
+            <h1>
+              Мало туристов
+            </h1>
+
+            <div class="welcome-page title_separator separator_black"></div>
+
+            <p>
+              Большинство едет в Гранд Каньон и толпится там
+            </p>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <img
+            src="./images/photo-2.jpg"
+            width="800"
+            alt="photo_1"
+          >
+
+          <div class="blue-box">
+            <h1>
+              Там есть
+              мост дьявола
+            </h1>
+
+            <div class="welcome-page title_separator"></div>
+
+            <p class="second_subtitle">
+              Да, по нему можно пройти! Если вы осмелитесь, разумеется
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="welcome-page praimary_title">
+        <h1 class="welcome-page main_title">
+          Приезжайте в Седону отдохнуть в комфорте и уюте!
+        </h1>
+
+        <p class="welcome-page main_subtitle">
+          Опытный персонал и качественное обслуживание!
+        </p>
+      </div>
+
+      <div class="welcome-page sedona_benefits wrapper">
+        <div class="white-box">
+          <img
+            src="./images/advantage-home-icon.svg"
+            width="75"
+            height="72"
+            alt="home"
+          >
+        <h1>
+          Жильё
+        </h1>
+        <p>
+          Рекомендуем пожитьв настоящем мотеле, всё как в кино!
+        </p>
+        </div>
+
+        <div class="white-box item_primary">
+        <img
+            src="./images/advantage-food-icon.svg"
+            width="75"
+            height="72"
+            alt="food"
+        >
+        <h1>
+          Еда
+        </h1>
+        <p>
+          Всегда заказывайте
+          топовый фирменный бургер, вы не разочаруетесь!
+        </p>
+      </div>
+
+      <div class="white-box">
+          <img
+            src="./images/advantage-gift-icon.svg"
+            width="75"
+            height="72"
+            alt="gift"
+          >
+        <h1>
+        Сувениры
+        </h1>
+        <p>
+          Не только китайского,
+          но и настоящего местного производства!
+        </p>
+      </div>
+      </div>
+
+      <div class="welcome-page subscribe">
         <h1>
           Подпишитесь на рассылку
         </h1>
@@ -206,12 +223,17 @@
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
 
-        <input placeholder="Ваш E-mail">
-        <button>
-          Подписаться
-        </button>
-      </div>
+        <div class="wrapper">
+          <input class="subscribe-input" placeholder="Ваш E-mail">
 
+          <button class="subscribe-button">
+            Подписаться
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="main-footer">
       <div class="socials_logo">
         <img
           src="./images/social-vk.svg"
