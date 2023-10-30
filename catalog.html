@@ -1,63 +1,157 @@
-<div>
-  <div class="constructor">
-    <h1>
-      Гостиницы Седоны
-    </h1>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Гостиницы Седоны</title>
 
-    <div class="conditions">
-      <h5>Инфраструктура:</h5>
-      <div class="conditions_infro">
-        <input type="checkbox" name="Бассейн">
-        <input type="checkbox" name="Парковка">
-        <input type="checkbox" name="Wi-FI">
+    <link rel="stylesheet" href="./styels/index.css">
+  </head>
+
+  <body>
+    <header class="page-header">
+
+    </header>
+
+    <main class="page_content">
+      <div class="constructor">
+        <h1 class="constructor-main-title">
+          Гостиницы Седоны
+        </h1>
+
+        <div class="conditions">
+          <div class="conditions-wrapper">
+            <div class="conditions-checkboxs">
+              <p class="second_subtitle conditions-title">Инфраструктура:</p>
+              <div class="conditions_info">
+                <div>
+                  <input class="conditions-checkbox" id="poll" type="checkbox" name="Бассейн" />
+                  <label class="second_subtitle" for="scales">Бассейн</label>
+                </div>
+
+                <div>
+                  <input class="conditions-checkbox" id="parking" type="checkbox" name="Парковка" />
+                  <label class="second_subtitle" for="parking">Парковка</label>
+                </div>
+
+                <div>
+                  <input class="conditions-checkbox" id="Wi-FI" type="checkbox" name="Wi-FI" />
+                  <label class="second_subtitle" for="parking">Wi-FI</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="conditions-radio">
+              <p class="second_subtitle conditions-title">Тип жилья:</p>
+              <div class="conditions_info">
+
+                <div>
+                  <input class="conditions-checkbox" id="hotel" type="radio" name="conditions" />
+                  <label class="second_subtitle" for="hotel">Гостиница</label>
+                </div>
+
+                <div>
+                  <input class="conditions-checkbox" id="motel" type="radio" name="conditions" />
+                  <label class="second_subtitle" for="motel">Мотель</label>
+                </div>
+
+                <div>
+                  <input class="conditions-checkbox" id="apart" type="radio" name="conditions" />
+                  <label class="second_subtitle" for="apart">Апартаменты</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="conditions-wrapper">
+            <div>
+              <p class="second_subtitle">Стоимость, ₽:</p>
+
+              <div class="conditions-price-wrapper">
+                <input
+                  class="conditions-price-from"
+                  placeholder="от"
+                  value="0"
+                  min="0"
+                  alt="цена отеля от"
+                 >
+                <input
+                    class="conditions-price-to"
+                    placeholder="до"
+                    value="9000"
+                    max="4"
+                    alt="цена отеля до"
+                  >
+              </div>
+
+              <input class="conditions-price-range" type="range">
+            </div>
+
+            <div class="conditions-buttons">
+              <button class="conditions-button">
+                Применить
+              </button>
+
+              <button class="conditions-button">
+                Сбросить
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <h5>Тип жилья::</h5>
-      <div class="conditions_type">
-        <input name="type" type="radio" title="Бассейн" >
-        <input name="type" type="radio" title="Парковка">
-        <input name="type" type="radio" title="Wi-FI">
+      <div class="listing-wrapper">
+        <div class="isting-filters">
+          <h1 class="filter_total">
+            Найдено гостиниц: 38
+          </h1>
+
+          <div class="filter_sort">
+            Сначала дешевые
+          </div>
+
+          <div class="filter_view">
+            icon
+          </div>
+        </div>
+
+        <div class="listing">
+          <div class="product_card">
+            <img src="./images/listing-hotel-1.jpg">
+
+            <h1 class="product_card-title">Amara Resort & Spa</h1>
+
+            <div class="product_card-types card-wrapper">
+              <span class="product_card-type">Гостиница</span>
+              <span class="product_card-price">От 4000 ₽</span>
+            </div>
+
+            <div class="product_card-buttons card-wrapper">
+              <button></button>
+              <button></button>
+            </div>
+
+            <div class="product_car-raitings card-wrapper">
+              <span>
+                stars
+              </span>
+
+              <span>
+                Рейтинг: 8,5
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="listing-separator"></div>
+
+        <div class="pagination">
+          123123
+        </div>
       </div>
+    </main>
 
-
-      <div>
-        <h5>Стоимость, ₽:</h5>
-        <input type="range" >
-      </div>
-
-      <div>
-        <button>
-          Применить
-        </button>
-
-        <button>
-          Сбросить
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <div class="filter">
-    <div class="filter_total">
-
-    </div>
-
-    <div class="filter_sort">
-
-    </div>
-
-    <div class="filter_view">
-
-    </div>
-  </div>
-
-  <div class="listing">
-    <div class="product_card">
-      <img src="./img/hotel_amara">
-    </div>
-  </div>
-
-  <div class="pagination">
-
-  </div>
-</div>
+    <footer class="main-footer">
+    </footer>
+  </body>
+</html>
