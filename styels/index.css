@@ -13,6 +13,7 @@
   --bgTextActionSecondery: #83B3D333;
 
   --baseGray: #E6E6E6;
+  --formsElementsSecond: #F2F2F2;
 
   --blur: 10px;
   --zIndexMax: 999
@@ -30,31 +31,6 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
-}
-
-input[type='range'] {
-  overflow: hidden;
-  width: 226px;
-  height: 4px;
-  background-color: rgb(169, 130, 130);
-  -webkit-appearance: none;
-}
-
-input[type='range']::-webkit-slider-runnable-track {
-  width: 20px;
-  height: 30px;
-  -webkit-appearance: none;
-  color: var(--bgTextPrimary);
-  margin-top: -1px;
-}
-
-input[type='range']::-webkit-slider-thumb {
-  width: 10px;
-  -webkit-appearance: none;
-  height: 10px;
-  cursor: ew-resize;
-  background: var(--bgTextPrimary);
-  box-shadow: -80px 0 0 80px var(--bgTextPrimary);
 }
 
 
@@ -428,6 +404,12 @@ button {
   margin-bottom: 40px;
 }
 
+.product-listing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
 .product_card {
   max-width: 300px;
   max-height: 438px;
@@ -436,17 +418,49 @@ button {
   border: 1px solid #E6E6E6;
 }
 
+.product_card-button {
+  width: 140px;
+  height: 36px;
+  border-radius: 4px;
+  background: var(--bgButtonsBasic);
+
+  color: var(--texts-background-deafault, #FFF);
+  text-align: center;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.button-secondery {
+  background: var(--bgTextAction);
+}
+
 .product_card-title {
   margin: 16px 0 16px 0;
+  text-transform: unset;
 }
 
 .product_card-buttons {
   margin: 16px 0 16px 0;
 }
 
+.text-raiting {
+  padding: 10px;
+  border-radius: 4px;
+  background: var(--formsElementsSecond);
+}
+
+.raiting-star {
+  background-image: url(../images/raiting-star.svg);
+}
+
 .card-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .listing-separator {
@@ -455,4 +469,31 @@ button {
   width: 1060px;
   border-top: 1px solid;
   color: var(--baseGray);
+}
+
+.pagination {
+  display: flex;
+  gap: 8px;
+}
+
+.pagination-item {
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: var(--formsElementsSecond);
+}
+
+.pagination-active {
+  color: var(--bgTextPrimary);
+  background: var(--bgTextAction);
+}
+
+.pagination-separator {
+  background: unset;
 }
