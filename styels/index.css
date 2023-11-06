@@ -112,6 +112,7 @@ button {
 .page_content {
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
   background-color: var(--bgTextPrimary);
 }
 
