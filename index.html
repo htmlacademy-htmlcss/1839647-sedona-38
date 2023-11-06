@@ -303,39 +303,55 @@
       </div>
     </footer>
 
-    <div class="modal-container">
+    <!-- для показа модального окна visually-show -->
+    <div class="modal-container visually-hidden">
       <div class="modal">
         <button class="modal-close-button">
-          <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-        </section>
 
-        <div>
-          Дата заезда:
-        </div>
+          <div class="modal-wrapper">
+            <div class="modal-title-wrapper">
+              <span class="modal-subtitle">Дата заезда:</span>
+              <input type="date" name="checkin-date">
+              <span class="modal-error">Мы не можем отправить вас в прошлое.</span>
+            </div>
 
-        <div class="div">
-          Дата выезда:
-        </div>
+            <div class="modal-title-wrapper">
+              <span class="modal-subtitle">Дата выезда:</span>
+              <input type="date" name="checkout-date">
+              <div class="modal-notice">На эти даты есть свободные номера. Пока есть.</div>
+            </div>
 
-        <div class="div">
-          Взрослые
-          Дети
+            <div class="modal-counter">
+              <span class="modal-subtitle">Взрослые:</span>
+              <input type="number" name="adults">
 
-          <span class="tooltip">
-            <button class="tooltip-toggle" type="button">
-              <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"><path d="M8 14A6 6 0 108 2a6 6 0 000 12zm1.27-8.73a1.27 1.27 0 11-2.54 0 1.27 1.27 0 012.54 0zm0 2.23V11H6.73V7.5h2.54z"/></svg>
+              <span class="modal-subtitle">Дети:</span>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button">
+                  <svg
+                    class="tooltip-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor">
+                    <path d="M8 14A6 6 0 108 2a6 6 0 000 12zm1.27-8.73a1.27 1.27 0 11-2.54 0 1.27 1.27 0 012.54 0zm0 2.23V11H6.73V7.5h2.54z"/>
+                  </svg>
+                </button>
+
+                <span class="tooltip-text">
+                  Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
+                </span>
+              </span>
+
+              <input type="number" name="children">
+            </div>
+
+            <button class="subscribe-button">
+              Найти
             </button>
-
-            <span class="tooltip-text">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</span>
-          </span>
-        </div>
-
-        <button>
-          Найти
-        </button>
+          </div>
+        </section>
       </div>
     </div>
   </body>
