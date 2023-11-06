@@ -467,7 +467,7 @@ button {
   appearance: none;
   padding: 14px 20px;
   width: 292px;
-  height: 49px;
+  height: 52px;
   border: 2px solid var(--baseGray);
   border-radius: 4px;
 }
@@ -611,6 +611,7 @@ button {
 .filter_view {
   display: flex;
   gap: 10px;
+  height: 48px;
 }
 
 .filter_total {
@@ -744,7 +745,6 @@ button {
   right: 32px;
   width: 40px;
   height: 40px;
-  background-color: #ccc;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -756,7 +756,7 @@ button {
   height: 16px;
   background-color: #333;
   top: 32%;
-  left: 48%;
+  left: 47%;
   transform: translate(-50%, -50%);
 }
 
@@ -805,6 +805,14 @@ button {
   position: relative;
   display: flex;
   gap: 16px;
+  align-items: center;
+}
+
+.modal-title-extra {
+  position: relative;
+  display: flex;
+  gap: 46px;
+  align-items: center;
 }
 
 .modal-wrapper {
@@ -812,19 +820,88 @@ button {
   gap: 48px;
 }
 
+.modal-counter {
+  display: flex;
+  justify-content: space-between;
+}
+
 .modal-error {
-  position: absolute;
-  top: 26px;
+  margin-top: 4px;
   color: #FF5757;
   font-size: 16px;
   font-weight: 400;
 }
 
 .modal-notice {
-  position: absolute;
-  top: 26px;
+  margin-top: 4px;
   font-size: 16px;
   font-weight: 400;
+}
+
+.custom-date input[type="date"] {
+  position: relative;
+  width: 440px;
+  height: 48px;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  border-radius: 4px;
+  background: var(--basic-light, #F2F2F2);
+  border: none;
+}
+
+::-webkit-calendar-picker-indicator {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  background-image: url(../images//date.svg);
+}
+
+.custom-number {
+  display: flex;
+  align-items: center;
+}
+
+.custom-number input[type="number"] {
+  width: 10px;
+  height: 28px;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  border: unset;
+  background: var(--basic-light, #F2F2F2);
+  appearance: none;
+}
+
+.counter-box {
+  padding: 14px 10px;
+  background: var(--basic-light, #F2F2F2);
+}
+
+.counter-plus {
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/button-plus.svg);
+}
+
+.counter-minus {
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/button-minus.svg);
+}
+
+.notice-icon {
+  position: relative;
+  bottom: 2px;
+}
+
+.custom-number::-webkit-outer-spin-button,
+.custom-number::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 /* tooltip */
@@ -886,5 +963,5 @@ button {
 
 /* для показа модального окна */
 .visually-show {
-  display: none;
+  display: flex;
 }

@@ -221,7 +221,7 @@
         </h1>
 
         <p class="main_subtitle">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+          Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
 
         <button class="want-button text spacer-wrapper">
@@ -304,7 +304,7 @@
     </footer>
 
     <!-- для показа модального окна visually-show -->
-    <div class="modal-container visually-hidden">
+    <div class="modal-container visually-show">
       <div class="modal">
         <button class="modal-close-button">
         </button>
@@ -314,37 +314,109 @@
           <div class="modal-wrapper">
             <div class="modal-title-wrapper">
               <span class="modal-subtitle">Дата заезда:</span>
-              <input type="date" name="checkin-date">
-              <span class="modal-error">Мы не можем отправить вас в прошлое.</span>
+              <label class="custom-date">
+                <input
+                  type="date"
+                   id="checkin-date"
+                  name="checkin-date"
+                  class="custom-date"
+                  value="2020-04-27"
+                >
+                <div class="modal-error">Мы не можем отправить вас в прошлое.</div>
+              </label>
             </div>
+
 
             <div class="modal-title-wrapper">
               <span class="modal-subtitle">Дата выезда:</span>
-              <input type="date" name="checkout-date">
-              <div class="modal-notice">На эти даты есть свободные номера. Пока есть.</div>
+              <label class="custom-date">
+                <input
+                  type="date"
+                  id="checkout-date"
+                  name="checkout-date"
+                  class="custom-date"
+                  value="2023-09-01"
+                >
+                <div class="modal-notice">На эти даты есть свободные номера. Пока есть.</div>
+              </label>
             </div>
 
             <div class="modal-counter">
-              <span class="modal-subtitle">Взрослые:</span>
-              <input type="number" name="adults">
+              <div class="modal-title-extra">
+                <span class="modal-subtitle">Взрослые:</span>
+                <label class="custom-number">
+                  <div class="counter-box">
+                    <img
+                      src="./images/button-minus.svg"
+                      width="20"
+                      height="20"
+                      alt="plus"
+                    >
+                  </div>
+                  <input
+                    class="custom-number"
+                    type="number"
+                    name="adults"
+                    value="2"
+                  >
+                  <div class="counter-box">
+                    <img
+                      src="./images/button-plus.svg"
+                      width="20"
+                      height="20"
+                      alt="minus"
+                    >
+                  </div>
+                </label>
+              </div>
 
-              <span class="modal-subtitle">Дети:</span>
-              <span class="tooltip">
-                <button class="tooltip-toggle" type="button">
-                  <svg
-                    class="tooltip-icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16" height="16" fill="currentColor">
-                    <path d="M8 14A6 6 0 108 2a6 6 0 000 12zm1.27-8.73a1.27 1.27 0 11-2.54 0 1.27 1.27 0 012.54 0zm0 2.23V11H6.73V7.5h2.54z"/>
-                  </svg>
-                </button>
+              <div class="modal-title-extra">
+                <div style="display: flex; gap: 10px;">
+                  <span class="modal-subtitle">Дети:</span>
+                  <div>
+                    <span class="tooltip">
+                      <button class="tooltip-toggle" type="button">
+                        <img
+                          class="notice-icon"
+                          src="./images/notice.svg"
+                          width="26"
+                          height="26"
+                          alt="notice"
+                        >
+                      </button>
 
-                <span class="tooltip-text">
-                  Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
-                </span>
-              </span>
+                      <span class="tooltip-text">
+                        Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
+                      </span>
+                    </span>
+                  </div>
+                </div>
 
-              <input type="number" name="children">
+                <label class="custom-number">
+                  <div class="counter-box">
+                    <img
+                      src="./images/button-minus.svg"
+                      width="20"
+                      height="20"
+                      alt="plus"
+                    >
+                  </div>
+                  <input
+                    class="custom-number"
+                    type="number"
+                    name="children"
+                    value="2"
+                  >
+                  <div class="counter-box">
+                    <img
+                      src="./images/button-plus.svg"
+                      width="20"
+                      height="20"
+                      alt="minus"
+                    >
+                  </div>
+                </label>
+              </div>
             </div>
 
             <button class="subscribe-button">
