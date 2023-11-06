@@ -100,19 +100,19 @@
                 <p class="second_subtitle conditions-title">Тип жилья:</p>
                 <div class="conditions_info">
                   <label class="custom-radio">
-                    <input type="radio" name="hotel" id="hotel">
+                    <input type="radio" name="hotel-type" id="hotel">
                     <span class="radio-icon"></span>
                     <span class="checkbox_subtitle" for="parking">Гостиница</label>
                   </label>
 
                   <label class="custom-radio">
-                    <input type="radio" name="motel" id="motel">
+                    <input type="radio" name="hotel-type" id="motel">
                     <span class="radio-icon"></span>
                     <span class="checkbox_subtitle" for="parking">Мотель</label>
                   </label>
 
                   <label class="custom-radio">
-                    <input type="radio" name="apart" id="apart">
+                    <input type="radio" name="hotel-type" id="apart">
                     <span class="radio-icon"></span>
                     <span class="checkbox_subtitle" for="parking">Апартаменты</label>
                   </label>
@@ -127,27 +127,32 @@
 
                 <div class="conditions-price-wrapper">
                   <div>
+                   <label class="custom-price">
                     <input
-                      class="range-input conditions-price-from"
-                      placeholder="от"
-                      name="price-from"
                       type="number"
+                      id="price-from"
+                      name="price-from"
+                      class="custom-price onditions-price-from"
                       value="0"
                       min="0"
-                      alt="цена отеля от"
-                   >
+                    >
+                    <span class="conditions-price-text">от</span>
+                  </label>
                   </div>
 
                   <div>
-                    <input
-                      class="range-input conditions-price-to"
-                      placeholder="до"
-                      name="price-to"
-                      type="number"
-                      value="9000"
-                      max="9000"
-                      alt="цена отеля до"
-                    >
+                    <label class="custom-price">
+                      <input
+                        type="number"
+                        id="price-to"
+                        name="price-from"
+                        class="custom-price"
+                        style="border-radius: 0 4px 4px 0"
+                        value="9000"
+                        max="9000"
+                      >
+                      <span class="conditions-price-text">до</span>
+                    </label>
                   </div>
                 </div>
 

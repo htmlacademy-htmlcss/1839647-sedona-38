@@ -503,30 +503,30 @@ button {
   margin: 32px 0 36px 0;
 }
 
-.conditions-price-to {
-  appearance: none;
-  width: 143px;
-  padding: 12px 20px;
+.custom-price {
+  position: relative;
+}
+
+.conditions-price-text {
+  position: absolute;
+  bottom: 0;
+  right: 15px;
   font-size: 18px;
-  font-weight: 700;
-  border: unset;
+  font-style: normal;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.conditions-price-to {
   border-radius: 0 4px 4px 0;
-  background: var(--bgTextPrimary)
 }
 
 .conditions-price-from {
-  appearance: none;
-  width: 143px;
-  padding: 12px 20px;
-  font-size: 18px;
-  font-weight: 700;
-  border: unset;
   border-radius: 4px 0 0 4px;
-  background: var(--bgTextPrimary)
 }
 
-.range-input::-webkit-outer-spin-button,
-.range-input::-webkit-inner-spin-button {
+.custom-price::-webkit-outer-spin-button,
+.custom-price::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
@@ -836,6 +836,16 @@ button {
   margin-top: 4px;
   font-size: 16px;
   font-weight: 400;
+}
+
+.custom-price input[type="number"] {
+  width: 95px;
+  padding: 12px 20px;
+  border-radius: 4px 0 0 4px;
+  font-size: 18px;
+  font-weight: 700;
+  border: unset;
+  background: var(--basic-light, #F2F2F2);
 }
 
 .custom-date input[type="date"] {
