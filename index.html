@@ -225,11 +225,15 @@
         </p>
 
         <button class="want-button text spacer-wrapper">
-          <a href="catalog.html"></a>
+          <a href="catalog.html">поиск гостиниц в седоне</a>
         </button>
       </div>
 
-      <div class="welcome-page subscribe">
+      <form
+        class="welcome-page subscribe"
+        action="https://echo.htmlacademy.ru"
+        method="post"
+      >
         <h1 class="main_title white-subtitle">
           Подпишитесь на рассылку
         </h1>
@@ -238,7 +242,11 @@
         </p>
 
         <div class="wrapper spacer-wrapper">
-          <input class="subscribe-input" placeholder="Ваш E-mail">
+          <input
+            class="subscribe-input"
+            placeholder="Ваш E-mail"
+            name="subscribe-input"
+          >
 
           <button class="subscribe-button">
             Подписаться
@@ -278,7 +286,9 @@
       </div>
 
       <div class="phone">
-        +7 (812) 812-12-12
+        <a href="tel:+7 (812) 812-12-12">
+          +7 (812) 812-12-12
+        </a>
       </div>
 
       <div class="company_logo">
@@ -292,5 +302,41 @@
         </a>
       </div>
     </footer>
+
+    <div class="modal-container">
+      <div class="modal">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        </section>
+
+        <div>
+          Дата заезда:
+        </div>
+
+        <div class="div">
+          Дата выезда:
+        </div>
+
+        <div class="div">
+          Взрослые
+          Дети
+
+          <span class="tooltip">
+            <button class="tooltip-toggle" type="button">
+              <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"><path d="M8 14A6 6 0 108 2a6 6 0 000 12zm1.27-8.73a1.27 1.27 0 11-2.54 0 1.27 1.27 0 012.54 0zm0 2.23V11H6.73V7.5h2.54z"/></svg>
+            </button>
+
+            <span class="tooltip-text">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</span>
+          </span>
+        </div>
+
+        <button>
+          Найти
+        </button>
+      </div>
+    </div>
   </body>
 </html>

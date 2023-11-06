@@ -66,7 +66,7 @@
         </h1>
 
         <form
-          action=""
+          action="https://echo.htmlacademy.ru"
           method="post"
           class="conditions"
           id="conditions-filter"
@@ -76,19 +76,19 @@
               <p class="second_subtitle conditions-title">Инфраструктура:</p>
               <div class="conditions_info">
                 <label class="custom-radio">
-                  <input type="checkbox" name="radio-option" id="poll" name="Бассейн">
+                  <input type="checkbox" id="poll" name="Бассейн">
                   <span class="checkbox-icon"></span>
                   <span class="checkbox_subtitle" for="parking">Бассейн</label>
                 </label>
 
                 <label class="custom-radio">
-                  <input type="checkbox" name="radio-option" id="parking" name="Парковка">
+                  <input type="checkbox" id="parking" name="Парковка">
                   <span class="checkbox-icon"></span>
                   <span class="checkbox_subtitle" for="parking">Парковка</label>
                 </label>
 
                 <label class="custom-radio">
-                  <input type="checkbox" name="radio-option" id="Wi-FI" name="Wi-FI">
+                  <input type="checkbox" id="Wi-FI" name="Wi-FI">
                   <span class="checkbox-icon"></span>
                   <span class="checkbox_subtitle" for="parking">Wi-FI</label>
                 </label>
@@ -99,19 +99,19 @@
               <p class="second_subtitle conditions-title">Тип жилья:</p>
               <div class="conditions_info">
                 <label class="custom-radio">
-                  <input type="radio" name="conditions" id="hotel">
+                  <input type="radio" name="hotel" id="hotel">
                   <span class="radio-icon"></span>
                   <span class="checkbox_subtitle" for="parking">Гостиница</label>
                 </label>
 
                 <label class="custom-radio">
-                  <input type="radio" name="conditions" id="motel">
+                  <input type="radio" name="motel" id="motel">
                   <span class="radio-icon"></span>
                   <span class="checkbox_subtitle" for="parking">Мотель</label>
                 </label>
 
                 <label class="custom-radio">
-                  <input type="radio" name="conditions" id="apart">
+                  <input type="radio" name="apart" id="apart">
                   <span class="radio-icon"></span>
                   <span class="checkbox_subtitle" for="parking">Апартаменты</label>
                 </label>
@@ -127,8 +127,9 @@
               <div class="conditions-price-wrapper">
                 <div>
                   <input
-                    class="conditions-price-from"
+                    class="range-input conditions-price-from"
                     placeholder="от"
+                    name="price-from"
                     type="number"
                     value="0"
                     min="0"
@@ -138,8 +139,9 @@
 
                 <div>
                   <input
-                    class="conditions-price-to"
+                    class="range-input conditions-price-to"
                     placeholder="до"
+                    name="price-to"
                     type="number"
                     value="9000"
                     max="9000"
@@ -147,6 +149,20 @@
                   >
                 </div>
               </div>
+              <!--
+              <div class="conditions-price-range">
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 42px; width: 136px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden"></span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden"></span>
+                      </button>
+                    </div>
+                  </div>
+              </div> -->
 
               <input class="conditions-price-range" type="range">
             </div>
@@ -392,7 +408,11 @@
           <div class="pagination-item pagination-active">10</div>
         </div>
 
-        <div class="welcome-page catalog-subscribe">
+        <form
+          class="welcome-page catalog-subscribe"
+          action="https://echo.htmlacademy.ru"
+          method="post"
+        >
           <h1 class="main_title">
             Подпишитесь на рассылку
           </h1>
@@ -401,7 +421,11 @@
           </p>
 
           <div class="wrapper spacer-wrapper">
-            <input class="catalog-input" placeholder="Ваш E-mail">
+            <input
+              class="catalog-input"
+              placeholder="Ваш E-mail"
+              name="subscribe-input"
+            >
 
             <button class="subscribe-button">
               Подписаться
@@ -442,7 +466,9 @@
       </div>
 
       <div class="phone">
-        +7 (812) 812-12-12
+        <a href="tel:+7 (812) 812-12-12">
+          +7 (812) 812-12-12
+        </a>
       </div>
 
       <div class="company_logo">
