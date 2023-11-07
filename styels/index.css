@@ -307,6 +307,10 @@ button {
   border-radius: 4px 0 0 4px;
 }
 
+.social-logo-item:hover {
+  opacity: 0.8;
+}
+
 .catalog-input {
   width: 452px;
   padding: 12px 20px;
@@ -323,6 +327,14 @@ button {
   text-transform: uppercase;
 }
 
+.phone:hover {
+  color: var(--texts-hover, #756157);
+}
+
+.company_logo:hover {
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
 /** Buttons */
 .subscribe-button {
   height: 52px;
@@ -336,11 +348,19 @@ button {
   text-transform: uppercase;
 }
 
+.subscribe-button:hover {
+  background: #68A2CA;
+}
+
 .want-button {
   height: 36px;
   padding: 8px 50px;
   border-radius: 4px;
   background: var(--bgButtonsBasic);
+}
+
+.want-button:hover {
+  background: var(--buttons-brown-hover, #615048);
 }
 
 .title_separator {
@@ -406,6 +426,10 @@ button {
   margin-right: 15px;
   cursor: pointer;
   font-size: 16px;
+}
+
+.custom-radio:hover {
+ opacity: 0.3;
 }
 
 .custom-radio input {
@@ -586,6 +610,16 @@ button {
   background: unset
 }
 
+.conditions-button:hover {
+  background: #68A2CA;
+}
+
+.conditions-button:hover:last-child {
+  margin-top: 32px;
+  background: unset;
+  color: #E6E6E6;
+}
+
 .conditions-button {
   height: 52px;
   font-size: 16px;
@@ -624,6 +658,11 @@ button {
   align-items: center;
 
   border-radius: 4px;
+  border: 2px solid var(--textColorPrimary);
+}
+
+.view-filter-item:hover {
+  cursor: pointer;
   border: 2px solid var(--textColorPrimary);
 }
 
@@ -666,6 +705,18 @@ button {
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.button-praimary:hover {
+  background: var(--buttons-brown-hover, #615048);
+}
+
+.button-active:hover {
+  background: var(--buttons-green-hover, #6C9E42);
+}
+
+.button-secondery:hover {
+  background: var(--buttons-blue-hover, #68A2CA);
 }
 
 .button-secondery {
@@ -729,6 +780,11 @@ button {
   cursor: pointer;
 }
 
+.pagination-item:hover {
+  border-radius: 4px;
+  background: var(--buttons-blue-hover, #68A2CA);
+}
+
 .pagination-active {
   color: var(--bgTextPrimary);
   background: var(--bgTextAction);
@@ -747,6 +803,10 @@ button {
   height: 40px;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background: #E6E6E6;
 }
 
 .modal-close-button::before, .modal-close-button::after {
@@ -848,6 +908,11 @@ button {
   background: var(--basic-light, #F2F2F2);
 }
 
+.custom-price input[type="number"]:hover {
+  /* border: 1px solid #83B3D3; */
+  background: #E6E6E6;
+}
+
 .custom-date input[type="date"] {
   position: relative;
   width: 440px;
@@ -861,6 +926,10 @@ button {
   border: none;
 }
 
+.custom-date input[type="date"]:hover {
+  background: #E6E6E6;
+}
+
 ::-webkit-calendar-picker-indicator {
   width: 20px;
   height: 20px;
@@ -872,6 +941,10 @@ button {
 .custom-number {
   display: flex;
   align-items: center;
+}
+
+.custom-number input[type="number"]:hover {
+  background: #E6E6E6;
 }
 
 .custom-number input[type="number"] {
