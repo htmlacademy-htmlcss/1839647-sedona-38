@@ -121,6 +121,7 @@ button {
 }
 
 .praimary_logo {
+  position: relative;
   width: 1200px;
   height: 450px;
   background: center;
@@ -129,6 +130,38 @@ button {
   url(../images/welcome_text.svg),
   url(../images/index-background.jpg),
   url(../images/shevron.svg)
+}
+
+.shevron {
+  position: absolute;
+  bottom: 0;
+}
+
+.sedona_city_logo {
+  z-index: 10;
+}
+
+.nav-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-wrapper:hover {
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.nav-arrow {
+  color: var(--bgTextPrimary);
+  transform: rotate(270deg);
+  filter: brightness(0) invert(1);
+}
+
+.nav-title {
+  font-size: 16px;
+  color: var(--bgTextPrimary);
 }
 
 .praimary_title {
@@ -278,7 +311,7 @@ button {
   align-items: center;
   /* filter: blur(5px); */
   background-size: cover;
-  background-image: url(../images/index-background-blur.png);
+  background-image: url(../images/index-bg-blur.jpeg);
 }
 
 .catalog-subscribe {
@@ -383,15 +416,21 @@ button {
 
 .constructor-wrapper {
     padding: 35px 70px 70px 70px;
-    background-image: url(../images/index-background-blur.png);
+    background-color: var(--bgButtonsBasic);
+    background-image: url(../images/index-bg-blur.jpeg);
     background-repeat: round;
 }
 
 .constructor-main-title {
   font-size: 60px;
   color: var(--bgTextPrimary);
-  margin-bottom: 40px;
   text-transform: none;
+  line-height: 78px;
+  margin-bottom: 8px;
+}
+
+.main-title-wrapper {
+  margin-bottom: 40px;
 }
 
 .conditions-wrapper {
@@ -1027,12 +1066,24 @@ button {
   border-radius: 8px;
   width: 160px;
   position: absolute;
-  bottom: 100%;
   margin-bottom: 6px;
-  left: 50%;
+  top: 40px;
+  left: 70%;
   transform: translateX(-50%);
   z-index: 1;
   display: none;
+}
+
+.tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  transform: rotate(180deg);
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
