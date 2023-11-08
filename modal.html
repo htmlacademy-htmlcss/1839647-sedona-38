@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+
+    <link rel="stylesheet" href="./styels/index.css">
+  </head>
+
+  <body>
+    <div data-test="modal" class="modal-container">
+      <div class="modal">
+        <button class="modal-close-button" type="reset">
+        </button>
+        <form
+          action="https://echo.htmlacademy.ru"
+          method="post"
+        >
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+
+            <div class="modal-wrapper">
+              <div class="modal-title-wrapper">
+                <span class="modal-subtitle">Дата заезда:</span>
+                <label class="custom-date">
+                  <input
+                    type="date"
+                    id="checkin-date"
+                    name="checkin-date"
+                    class="custom-date"
+                    value="2020-04-27"
+                  >
+                  <div class="modal-error">Мы не можем отправить вас в прошлое.</div>
+                </label>
+              </div>
+
+
+              <div class="modal-title-wrapper">
+                <span class="modal-subtitle">Дата выезда:</span>
+                <label class="custom-date">
+                  <input
+                    type="date"
+                    id="checkout-date"
+                    name="checkout-date"
+                    class="custom-date"
+                    value="2023-09-01"
+                  >
+                  <div class="modal-notice">На эти даты есть свободные номера. Пока есть.</div>
+                </label>
+              </div>
+
+              <div class="modal-counter">
+                <div class="modal-title-extra">
+                  <span class="modal-subtitle">Взрослые:</span>
+                  <label class="custom-number">
+                    <div class="counter-box">
+                      <img
+                        src="./images/button-minus.svg"
+                        width="20"
+                        height="20"
+                        alt="plus"
+                      >
+                    </div>
+                    <input
+                      class="custom-number"
+                      type="number"
+                      name="adults"
+                      value="2"
+                    >
+                    <div class="counter-box">
+                      <img
+                        src="./images/button-plus.svg"
+                        width="20"
+                        height="20"
+                        alt="minus"
+                      >
+                    </div>
+                  </label>
+                </div>
+
+                <div class="modal-title-extra">
+                  <div style="display: flex; gap: 10px;">
+                    <span class="modal-subtitle">Дети:</span>
+                    <div>
+                      <span class="tooltip">
+                        <button class="tooltip-toggle" type="button">
+                          <img
+                            class="notice-icon"
+                            src="./images/notice.svg"
+                            width="26"
+                            height="26"
+                            alt="notice"
+                          >
+                        </button>
+
+                        <span class="tooltip-text">
+                          Укажите количество детей,
+                          которые будут с вами, возраст которых от 6 до 18 лет.
+                          Дети до 6 лет размещаются бесплатно.
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+
+                  <label class="custom-number">
+                    <div class="counter-box">
+                      <img
+                        src="./images/button-minus.svg"
+                        width="20"
+                        height="20"
+                        alt="plus"
+                      >
+                    </div>
+                    <input
+                      class="custom-number"
+                      type="number"
+                      name="children"
+                      value="2"
+                    >
+                    <div class="counter-box">
+                      <img
+                        src="./images/button-plus.svg"
+                        width="20"
+                        height="20"
+                        alt="minus"
+                      >
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <button class="subscribe-button" type="submit">
+                Найти
+              </button>
+            </div>
+          </section>
+        </form>
+      </div>
+    </div>
+   </body>
+</html>
