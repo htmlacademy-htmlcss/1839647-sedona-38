@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header data-test="header" class="page-header">
       <nav class="navigation">
         <a href="index.html" class="sedona_city_logo">
           <img
@@ -61,8 +61,8 @@
       </nav>
     </header>
 
-    <main class="page_content">
-      <div class="constructor">
+    <main data-test="main" class="page_content">
+      <div data-test="filter" class="constructor">
         <div class="constructor-wrapper">
           <div class="main-title-wrapper">
             <h1 class="constructor-main-title">
@@ -209,7 +209,7 @@
         </div>
       </div>
 
-      <div class="listing-wrapper">
+      <div data-test="catalog" class="listing-wrapper">
         <div class="isting-filters">
           <h1 class="filter_total">
             Найдено гостиниц: 38
@@ -438,6 +438,7 @@
         </div>
 
         <form
+          data-test="subscribe"
           class="welcome-page catalog-subscribe"
           action="https://echo.htmlacademy.ru"
           method="post"
@@ -464,7 +465,7 @@
       </div>
     </main>
 
-    <footer class="main-footer">
+    <footer data-test="footer" class="main-footer">
       <div class="socials_logo">
         <a href="https://vk.com/htmlacademy">
           <img

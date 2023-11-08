@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header data-test="header" class="page-header">
       <nav class="navigation">
         <a href="index.html" class="sedona_city_logo">
           <img
@@ -62,8 +62,8 @@
       </nav>
     </header>
 
-    <main class="page_content">
-      <div class="welcome-page praimary_logo">
+    <main data-test="main" class="page_content">
+      <div data-test="hero" class="welcome-page praimary_logo">
         <img class="shevron" src="./images/shevron.svg">
       </div>
 
@@ -77,7 +77,7 @@
           </p>
       </div>
 
-      <div class="welcome-page specification_list">
+      <div  data-test="advantages" class="welcome-page specification_list">
         <div class="wrapper">
           <div class="blue-box">
             <h1>
@@ -159,7 +159,7 @@
 
       </div>
 
-      <div class="welcome-page praimary_title">
+      <div data-test="service" class="welcome-page praimary_title">
         <h1 class="welcome-page main_title">
           Приезжайте в Седону отдохнуть в комфорте и уюте!
         </h1>
@@ -169,7 +169,7 @@
         </p>
       </div>
 
-      <div class="welcome-page sedona_benefits wrapper">
+      <div data-test="service" class="welcome-page sedona_benefits wrapper">
         <div class="white-box">
           <img
             src="./images/advantage-home-icon.svg"
@@ -220,7 +220,7 @@
       </div>
       </div>
 
-      <div class="praimary_title">
+      <div data-test="search" class="praimary_title">
         <h1 class="main_title">
           Заинтересовались?
         </h1>
@@ -235,6 +235,7 @@
       </div>
 
       <form
+        data-test="subscribe"
         class="welcome-page subscribe"
         action="https://echo.htmlacademy.ru"
         method="post"
@@ -260,7 +261,7 @@
       </div>
     </main>
 
-    <footer class="main-footer">
+    <footer data-test="footer" class="main-footer">
       <div class="socials_logo">
         <a href="https://vk.com/htmlacademy">
           <img
