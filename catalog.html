@@ -20,7 +20,7 @@
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">
+            <a class="navigation-link navigation-link-current" href="index.html">
               Главная
             </a>
           </li>
@@ -38,7 +38,6 @@
             >
               Гостиницы
             </a>
-            <div class="navigation-pointer"></div>
           </li>
         </ul>
 
@@ -95,7 +94,7 @@
           >
             <div class="conditions-wrapper">
               <div class="conditions-checkboxs">
-                <p class="second_subtitle conditions-title">Инфраструктура:</p>
+                <p class="second_subtitle second_subtitle-catalog conditions-title">Инфраструктура:</p>
                 <div class="conditions_info">
                   <label class="custom-radio">
                     <input type="checkbox" id="poll" name="Бассейн">
@@ -118,7 +117,7 @@
               </div>
 
               <div class="conditions-radio">
-                <p class="second_subtitle conditions-title">Тип жилья:</p>
+                <p class="second_subtitle second_subtitle-catalog conditions-title">Тип жилья:</p>
                 <div class="conditions_info">
                   <label class="custom-radio">
                     <input type="radio" name="hotel-type" id="hotel">
@@ -144,67 +143,68 @@
 
             <div class="conditions-wrapper">
               <div>
-                <p class="second_subtitle">Стоимость, ₽:</p>
+                <p class="second_subtitle second_subtitle-catalog">Стоимость, ₽:</p>
 
-                <div class="conditions-price-wrapper">
+                <div style="display: flex; align-items: baseline; gap: 70px;">
                   <div>
-                   <label class="custom-price">
-                    <input
-                      type="number"
-                      id="price-from"
-                      name="price-from"
-                      class="custom-price onditions-price-from"
-                      value="0"
-                      min="0"
-                    >
-                    <span class="conditions-price-text">от</span>
-                  </label>
-                  </div>
+                    <div class="conditions-price-wrapper">
+                      <div>
+                       <label class="custom-price">
+                        <input
+                          type="number"
+                          id="price-from"
+                          name="price-from"
+                          class="custom-price onditions-price-from"
+                          value="0"
+                          min="0"
+                        >
+                        <span class="conditions-price-text">от</span>
+                      </label>
+                      </div>
 
-                  <div>
-                    <label class="custom-price">
-                      <input
-                        type="number"
-                        id="price-to"
-                        name="price-from"
-                        class="custom-price"
-                        style="border-radius: 0 4px 4px 0"
-                        value="9000"
-                        max="9000"
-                      >
-                      <span class="conditions-price-text">до</span>
-                    </label>
-                  </div>
-                </div>
-
-                <div class="conditions-price-range">
-                  <div class="range">
-                    <div class="range-scale">
-                      <div class="range-bar" style="left: 42px; width: 136px">
-                        <button class="range-toggle toggle-min">
-                          <span class="visually-hidden"></span>
-                        </button>
-                        <button class="range-toggle toggle-max">
-                          <span class="visually-hidden"></span>
-                        </button>
+                      <div>
+                        <label class="custom-price">
+                          <input
+                            type="number"
+                            id="price-to"
+                            name="price-from"
+                            class="custom-price"
+                            style="border-radius: 0 4px 4px 0"
+                            value="9000"
+                            max="9000"
+                          >
+                          <span class="conditions-price-text">до</span>
+                        </label>
                       </div>
                     </div>
+
+                  <div class="conditions-price-range">
+                    <div class="range">
+                      <div class="range-scale">
+                        <div class="range-bar" style="left: 42px; width: 136px">
+                          <button class="range-toggle toggle-min">
+                            <span class="visually-hidden"></span>
+                          </button>
+                          <button class="range-toggle toggle-max">
+                            <span class="visually-hidden"></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+                  <div class="conditions-buttons">
+                    <button class="conditions-button" type="submit">
+                      Применить
+                    </button>
+
+                    <button class="conditions-button" type="reset">
+                      Сбросить
+                    </button>
+                  </div>
                 </div>
-
-                <!-- <input class="conditions-price-range" type="range"> -->
-              </div>
             </div>
-
-
-              <div class="conditions-buttons">
-                <button class="conditions-button" type="submit">
-                  Применить
-                </button>
-
-                <button class="conditions-button" type="reset">
-                  Сбросить
-                </button>
-              </div>
           </form>
         </div>
       </div>
@@ -215,6 +215,7 @@
             Найдено гостиниц: 38
           </h1>
 
+         <div style="display: flex; gap: 70px;">
           <div class="filter_sort">
             <div class="custom-select">
               <select class="hotel-price-filter" name="hotel-price-filter">
@@ -247,6 +248,7 @@
               >
             </div>
           </div>
+         </div>
         </div>
 
         <div class="product-listing">
@@ -265,8 +267,8 @@
               <button class="product_card-button button-secondery">в избранное</button>
             </div>
 
-            <div class="product_card-raitings card-wrapper">
-              <div>
+            <div class="product_card-raitings">
+              <div class="stars-raiting">
                 <img
                   src="./images/raiting-star.svg"
                   width="18"
@@ -293,9 +295,9 @@
                 />
               </div>
 
-              <span class="product_card text-raiting">
+              <div class="product_card text-raiting">
                 Рейтинг: 8,5
-              </span>
+              </div>
             </div>
           </div>
           <div class="product_card">
@@ -313,8 +315,8 @@
               <button class="product_card-button button-secondery button-active">в избранное</button>
             </div>
 
-            <div class="product_card-raitings card-wrapper">
-              <div>
+            <div class="product_card-raitings">
+              <div class="stars-raiting">
                 <img
                   src="./images/raiting-star.svg"
                   width="18"
@@ -341,9 +343,9 @@
                 />
               </div>
 
-              <span class="product_card text-raiting">
+              <div class="product_card text-raiting">
                 Рейтинг: 9,2
-              </span>
+              </div>
             </div>
           </div>
           <div class="product_card">
@@ -361,8 +363,8 @@
               <button class="product_card-button button-secondery">в избранное</button>
             </div>
 
-            <div class="product_card-raitings card-wrapper">
-              <div>
+            <div class="product_card-raitings">
+              <div class="stars-raiting">
                 <img
                   src="./images/raiting-star.svg"
                   width="18"
@@ -383,9 +385,9 @@
                 />
               </div>
 
-              <span class="product_card text-raiting">
+              <div class="product_card text-raiting">
                 Рейтинг: 6,9
-              </span>
+              </div>
             </div>
           </div>
           <div class="product_card">
@@ -403,8 +405,8 @@
               <button class="product_card-button button-secondery">в избранное</button>
             </div>
 
-            <div class="product_card-raitings card-wrapper">
-              <div>
+            <div class="product_card-raitings">
+              <div class="stars-raiting">
                 <img
                   src="./images/raiting-star.svg"
                   width="18"
@@ -419,9 +421,9 @@
                 />
               </div>
 
-              <span class="product_card text-raiting">
+              <div class="product_card text-raiting">
                 Рейтинг: 5,0
-              </span>
+              </div>
             </div>
           </div>
         </div>
@@ -436,33 +438,33 @@
           <div class="pagination-item pagination-separator">...</div>
           <div class="pagination-item pagination-active">10</div>
         </div>
-
-        <form
-          data-test="subscribe"
-          class="welcome-page catalog-subscribe"
-          action="https://echo.htmlacademy.ru"
-          method="post"
-        >
-          <h1 class="main_title">
-            Подпишитесь на рассылку
-          </h1>
-          <p class="main_subtitle">
-            Только полезная информация и никакого спама, честное бойскаутское!
-          </p>
-
-          <div class="wrapper spacer-wrapper">
-            <input
-              class="catalog-input"
-              placeholder="Ваш E-mail"
-              name="subscribe-input"
-            >
-
-            <button class="subscribe-button">
-              Подписаться
-            </button>
-          </div>
-        </form>
       </div>
+
+      <form
+      data-test="subscribe"
+      class="welcome-page catalog-subscribe"
+      action="https://echo.htmlacademy.ru"
+      method="post"
+    >
+      <h1 class="main_title">
+        Подпишитесь на рассылку
+      </h1>
+      <p class="main_subtitle">
+        Только полезная информация и никакого спама, честное бойскаутское!
+      </p>
+
+      <div class="wrapper spacer-wrapper">
+        <input
+          class="catalog-input"
+          placeholder="Ваш E-mail"
+          name="subscribe-input"
+        >
+
+        <button class="subscribe-button">
+          Подписаться
+        </button>
+      </div>
+    </form>
     </main>
 
     <footer data-test="footer" class="main-footer">
