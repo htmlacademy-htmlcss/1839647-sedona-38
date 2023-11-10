@@ -21,10 +21,9 @@
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">
+            <a class="navigation-link navigation-link-current" href="index.html">
               Главная
             </a>
-            <div class="navigation-pointer"></div>
           </li>
 
           <li class="navigation-item">
@@ -35,7 +34,7 @@
 
           <li class="navigation-item">
             <a
-              class="navigation-link navigation-link-current"
+              class="navigation-link"
               href="catalog.html"
             >
               Гостиницы
@@ -44,12 +43,12 @@
         </ul>
 
         <div class="navigation-bar wrapper">
-          <div class="search">
-            <img src="./images/search.svg" >
+          <div>
+            <img class="search" src="./images/search.svg" >
           </div>
 
-          <div class="wishlist">
-            <img src="./images/heart.svg" >
+          <div class="wishlist-wrapper">
+            <img class="wishlist" src="./images/heart.svg" >
             <div class="wishlist-counter">
               <span class="wishlist-counter-item">12</span>
             </div>
@@ -80,7 +79,7 @@
       <div  data-test="advantages" class="welcome-page specification_list">
         <div class="wrapper">
           <div class="blue-box">
-            <h1>
+            <h1 class="advantages-title">
               Настоящий городок
             </h2>
 
@@ -94,6 +93,7 @@
           <img
             src="./images/photo-1.jpg"
             width="800"
+            height="385"
             alt="photo_1"
           >
         </div>
@@ -144,9 +144,8 @@
           >
 
           <div class="blue-box">
-            <h1>
-              Там есть
-              мост дьявола
+            <h1 class="advantages-title">
+              Там есть<br> мост дьявола
             </h1>
 
             <div class="welcome-page title_separator"></div>
@@ -159,9 +158,9 @@
 
       </div>
 
-      <div data-test="service" class="welcome-page praimary_title">
+      <div data-test="service" class="welcome-page praimary_title praimary_title-second">
         <h1 class="welcome-page main_title">
-          Приезжайте в Седону отдохнуть в комфорте и уюте!
+          Приезжайте в Седону отдохнуть<br> в комфорте и уюте!
         </h1>
 
         <p class="welcome-page main_subtitle">
@@ -170,38 +169,38 @@
       </div>
 
       <div data-test="service" class="welcome-page sedona_benefits wrapper">
-        <div class="white-box">
+        <div class="white-box service">
           <img
             src="./images/advantage-home-icon.svg"
             width="75"
             height="72"
             alt="home"
           >
-        <h1 class="benefit-spacer">
+        <h1 class="benefit-spacer service-title">
           Жильё
         </h1>
-        <p>
+        <p class="box-subtitle">
           Рекомендуем пожитьв настоящем мотеле, всё как в кино!
         </p>
         </div>
 
-        <div class="white-box item_primary">
+        <div class="white-box item_primary service">
         <img
             src="./images/advantage-food-icon.svg"
             width="75"
             height="72"
             alt="food"
         >
-        <h1 class="benefit-spacer">
+        <h1 class="benefit-spacer service-title">
           Еда
         </h1>
-        <p>
+        <p class="box-subtitle">
           Всегда заказывайте
           топовый фирменный бургер, вы не разочаруетесь!
         </p>
       </div>
 
-      <div class="white-box">
+      <div class="white-box service">
           <img
             src="./images/advantage-gift-icon.svg"
             width="75"
@@ -209,27 +208,28 @@
             alt="gift"
           >
 
-        <h1 class="benefit-spacer">
+        <h1 class="benefit-spacer service-title">
         Сувениры
         </h1>
 
-        <p>
+        <p class="box-subtitle">
           Не только китайского,
           но и настоящего местного производства!
         </p>
       </div>
       </div>
 
-      <div data-test="search" class="praimary_title">
+      <div data-test="search" class="praimary_title praimary_title-search">
         <h1 class="main_title">
           Заинтересовались?
         </h1>
 
         <p class="main_subtitle">
-          Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне
+          Укажите предполагаемые даты поездки,<br>
+          и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
 
-        <button class="want-button text spacer-wrapper">
+        <button class="want-button text spacer-wrapper search-button">
           <a href="catalog.html">поиск гостиниц в седоне</a>
         </button>
       </div>
@@ -268,7 +268,7 @@
           class="social-logo-item"
           src="./images/social-vk.svg"
           width="24"
-          height="14"
+          height="18"
           alt="vk"
         >
         </a>
@@ -278,7 +278,7 @@
           class="social-logo-item"
           src="./images/social-tg.svg"
           width="24"
-          height="14"
+          height="18"
           alt="telegramm"
         >
         </a>
@@ -288,7 +288,7 @@
           class="social-logo-item"
           src="./images/social-you-tube.svg"
           width="24"
-          height="14"
+          height="18"
           alt="you-tube"
         >
         </a>

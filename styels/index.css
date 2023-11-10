@@ -123,7 +123,7 @@ button {
 .praimary_logo {
   position: relative;
   width: 1200px;
-  height: 450px;
+  height: 485px;
   background: center;
   background-repeat: no-repeat;
   background-image:
@@ -171,6 +171,17 @@ button {
   padding: 69px 0;
   justify-content: center;
   display: block;
+  margin-bottom: 21px;
+}
+
+.praimary_title-second {
+  margin-bottom: unset
+}
+
+.praimary_title-search {
+  width: auto;
+  margin-bottom: unset;
+  padding: 96px 304px;
 }
 
 .navigation {
@@ -183,21 +194,38 @@ button {
   background-color: var(--bgTextPrimary);
 }
 
-.navigation-pointer {
-  position: relative;
-  top: 20px;
-  border-bottom: 2px solid var(--bgButtonsBasic);
+.navigation-link {
+  padding: 20px 16px;
+}
+
+.search {
+  padding: 22px 12px;
+}
+
+.wishlist {
+  padding: 22px 12px;
+}
+
+.test {
+  width: 160px;
+  padding: 8px 50px;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation-list {
   display: flex;
-  gap: 16px;
+}
+
+.navigation-link-current {
+  border-bottom: 2px solid var(--bgButtonsBasic);
 }
 
 .navigation-item {
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
+  line-height: 24px;
 }
 
 /* .navigation-item::after {
@@ -208,17 +236,24 @@ button {
 
 .navigation-bar {
   align-items: center;
-  gap: 16px;
 }
 
 .wishlist {
   position: relative;
 }
 
+.wishlist-wrapper {
+  position: relative;
+}
+
+.advantages-title {
+  line-height: 28px;
+}
+
 .wishlist-counter {
   position: absolute;
-  left: 10px;
-  bottom: 12px;
+  top: 12px;
+  right: 4px;
   width: 20px;
   height: 20px;
   content: '';
@@ -227,6 +262,18 @@ button {
   color: var(--bgTextPrimary);
   background-color: var(--bgCounterColor);
   border-radius: 50%;
+}
+
+.box-subtitle {
+  width: 230px;
+  height: 63px;
+  line-height: 21px;
+}
+
+.box-subtitle-small {
+  width: 230px;
+  height: 43px;
+  line-height: 21px;
 }
 
 .wishlist-counter-item {
@@ -240,14 +287,24 @@ button {
 }
 
 .main_subtitle {
-  margin-top: 20px;
+  width: 651px;
+  margin-top: 25px;
   font-size: 22px;
   font-weight: 400;
+  line-height: 26px;
 }
 
 .second_subtitle {
+  width: 230px;
+  height: 63px;
   font-size: 18px;
+  line-height: 21px;
   color: var(--bgTextPrimary);
+}
+
+.second_subtitle-catalog {
+  height: auto;
+  width: auto;
 }
 
 .white-subtitle {
@@ -263,10 +320,19 @@ button {
 }
 
 .white-box {
+  width: 400px;
   padding: 103px 85px;
   text-align: center;
   color: var(--textColorPrimary);
   background: var(--bgTextSecondary);
+}
+
+.service {
+  padding: 80px 85px;
+}
+
+.service-title {
+  line-height: 28px;
 }
 
 .box-title {
@@ -290,8 +356,8 @@ button {
   align-items: center;
   padding: 40px 70px 30px 70px;
 
-  position: sticky;
-  bottom: 0;
+  /* position: sticky;
+  bottom: 0; */
   background-color: var(--bgTextPrimary);
 }
 
@@ -340,6 +406,10 @@ button {
   border-radius: 4px 0 0 4px;
 }
 
+.social-logo-item {
+  padding: 1px 10px;
+}
+
 .social-logo-item:hover {
   opacity: 0.8;
 }
@@ -386,10 +456,16 @@ button {
 }
 
 .want-button {
-  height: 36px;
-  padding: 8px 50px;
+  width: 160px;
   border-radius: 4px;
+  margin-left: 20px;
+  appearance: none;
+  line-height: 36px;
   background: var(--bgButtonsBasic);
+}
+
+.search-button {
+  width: 360px;
 }
 
 .want-button:hover {
@@ -415,7 +491,7 @@ button {
 }
 
 .constructor-wrapper {
-    padding: 35px 70px 70px 70px;
+    padding: 35px 70px 40px 70px;
     background-color: var(--bgButtonsBasic);
     background-image: url(../images/index-bg-blur.jpeg);
     background-repeat: round;
@@ -715,12 +791,31 @@ button {
   gap: 20px;
 }
 
+.product_card-raitings {
+  display: flex;
+  gap: 20px;
+}
+
 .product_card {
   max-width: 340px;
-  max-height: 438px;
+  height: auto;
   padding: 20px;
   border-radius: 4px;
   border: 1px solid #E6E6E6;
+}
+
+.product_card-type {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.product_card-price {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 116.667% */
 }
 
 .hotel-price-filter {
@@ -775,8 +870,17 @@ button {
   margin: 16px 0 16px 0;
 }
 
+.stars-raiting {
+  width: 100%;
+}
+
 .text-raiting {
-  padding: 10px;
+  width: 100%;
+  padding: 2px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 20px;
+  height: auto;
   border-radius: 4px;
   background: var(--formsElementsSecond);
 }
