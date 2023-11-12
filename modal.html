@@ -12,7 +12,6 @@
       <nav class="navigation">
         <a href="index.html" class="sedona_city_logo">
           <img src="./images/main_logo.svg" width="140" height="70" alt="sedona_city_logo">
-          </div>
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -55,7 +54,7 @@
 
     <main data-test="main" class="page_content">
       <div data-test="hero" class="welcome-page praimary_logo">
-        <img class="shevron" src="./images/shevron.svg" alt="shevron">
+        <img src="./images/welcome_text.svg" class="praimary-text" />
       </div>
 
       <div class="welcome-page praimary_title">
@@ -71,9 +70,9 @@
       <div data-test="advantages" class="welcome-page specification_list">
         <div class="wrapper">
           <div class="blue-box">
-            <h1 class="advantages-title">
+            <h2 class="advantages-title">
               Настоящий городок
-              </h2>
+            </h2>
 
               <div class="welcome-page title_separator"></div>
 
@@ -82,42 +81,42 @@
               </p>
           </div>
 
-          <img src="./images/photo-1.jpg" width="800" height="385" alt="photo_1">
+          <img src="./images/photo-1.jpg" width="800" alt="photo_1">
         </div>
 
-        <div class="wrapper">
-          <div class="white-box">
-            <h1 class="box-title">
+        <div class="grid-advantages-wrapper">
+          <div class="white-box white-box-wrapper">
+            <h2 class="box-title">
               Небольшая площадь
-            </h1>
+            </h2>
 
             <div class="welcome-page title_separator separator_black"></div>
 
-            <p>
+            <p class="box-subtitle">
               Все достопримечательности находятся очень близко
             </p>
           </div>
 
-          <div class="white-box item_secondery">
-            <h1 class="box-title">
+          <div class="white-box item_secondery white-box-wrapper">
+            <h2 class="box-title">
               Красивая дорога
-            </h1>
+            </h2>
 
             <div class="welcome-page title_separator separator_black"></div>
 
-            <p>
+            <p class="box-subtitle">
               Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </div>
 
-          <div class="white-box">
-            <h1 class="box-title">
+          <div class="white-box white-box-wrapper">
+            <h2 class="box-title">
               Мало туристов
-            </h1>
+            </h2>
 
             <div class="welcome-page title_separator separator_black"></div>
 
-            <p>
+            <p class="box-subtitle">
               Большинство едет в Гранд Каньон и толпится там
             </p>
           </div>
@@ -127,9 +126,9 @@
           <img src="./images/photo-2.jpg" width="800" alt="photo_1">
 
           <div class="blue-box">
-            <h1 class="advantages-title">
+            <h2 class="advantages-title">
               Там есть<br> мост дьявола
-            </h1>
+            </h2>
 
             <div class="welcome-page title_separator"></div>
 
@@ -142,43 +141,43 @@
       </div>
 
       <div data-test="service" class="welcome-page praimary_title praimary_title-second">
-        <h1 class="welcome-page main_title">
+        <h2 class="welcome-page main_title">
           Приезжайте в Седону отдохнуть<br> в комфорте и уюте!
-        </h1>
+        </h2>
 
-        <p class="welcome-page main_subtitle">
+        <p class="welcome-page main_subtitle main-second">
           Опытный персонал и качественное обслуживание!
         </p>
       </div>
 
-      <div data-test="service" class="welcome-page sedona_benefits wrapper">
-        <div class="white-box service">
+      <div data-test="service" class="welcome-page sedona_benefits grid-advantages-wrapper">
+        <div class="white-box service white-box-wrapper">
           <img src="./images/advantage-home-icon.svg" width="75" height="72" alt="home">
-          <h1 class="benefit-spacer service-title">
+          <h2 class="benefit-spacer service-title">
             Жильё
-          </h1>
+          </h2>
           <p class="box-subtitle">
             Рекомендуем пожитьв настоящем мотеле, всё как в кино!
           </p>
         </div>
 
-        <div class="white-box item_primary service">
+        <div class="white-box item_primary service white-box-wrapper">
           <img src="./images/advantage-food-icon.svg" width="75" height="72" alt="food">
-          <h1 class="benefit-spacer service-title">
+          <h2 class="benefit-spacer service-title">
             Еда
-          </h1>
+          </h2>
           <p class="box-subtitle">
             Всегда заказывайте
             топовый фирменный бургер, вы не разочаруетесь!
           </p>
         </div>
 
-        <div class="white-box service">
+        <div class="white-box service white-box-wrapper">
           <img src="./images/advantage-gift-icon.svg" width="75" height="72" alt="gift">
 
-          <h1 class="benefit-spacer service-title">
+          <h2 class="benefit-spacer service-title">
             Сувениры
-          </h1>
+          </h2>
 
           <p class="box-subtitle">
             Не только китайского,
@@ -188,25 +187,25 @@
       </div>
 
       <div data-test="search" class="praimary_title praimary_title-search">
-        <h1 class="main_title">
+        <h2 class="main_title">
           Заинтересовались?
-        </h1>
+        </h2>
 
-        <p class="main_subtitle">
+        <p class="main_subtitle main-second">
           Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
 
         <button class="want-button text spacer-wrapper search-button">
-          <a href="catalog.html">поиск гостиниц в седоне</a>
+          поиск гостиниц в седоне
         </button>
       </div>
 
       <form data-test="subscribe" class="welcome-page subscribe" action="https://echo.htmlacademy.ru" method="post">
-        <h1 class="main_title white-subtitle">
+        <h2 class="main_title white-subtitle">
           Подпишитесь на рассылку
-        </h1>
-        <p class="main_subtitle white-subtitle">
+        </h2>
+        <p class="main_subtitle white-subtitle main-second">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
 
@@ -217,32 +216,32 @@
             Подписаться
           </button>
         </div>
-        </div>
+      </form>
     </main>
 
     <footer data-test="footer" class="main-footer">
       <div class="socials_logo">
-        <a href="https://vk.com/htmlacademy">
+        <a href="https://vk.com/htmlacademy" class="social-link">
           <img class="social-logo-item" src="./images/social-vk.svg" width="24" height="18" alt="vk">
         </a>
 
-        <a href="https://t.me/htmlacademy ">
+        <a href="https://t.me/htmlacademy" class="social-link">
           <img class="social-logo-item" src="./images/social-tg.svg" width="24" height="18" alt="telegramm">
         </a>
 
-        <a href="https://www.youtube.com/user/htmlacademyru">
+        <a href="https://www.youtube.com/user/htmlacademyru" class="social-link">
           <img class="social-logo-item" src="./images/social-you-tube.svg" width="24" height="18" alt="you-tube">
         </a>
       </div>
 
       <div class="phone">
-        <a href="tel:+7(812)812-12-12">
+        <a href="tel:+7(812)812-12-12" class="phone-link">
           +7&nbsp;(812)&nbsp;812-12-12
         </a>
       </div>
 
       <div class="company_logo">
-        <a href="https://htmlacademy.ru/profile/id1839647">
+        <a href="https://htmlacademy.ru/profile/id1839647" class="social-link">
           <img src="./images/htm-academy-logo.svg" width="114" height="32" alt="html-academy-logo">
         </a>
       </div>
